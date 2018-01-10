@@ -25,7 +25,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 #prometheus Run
 sudo mkdir -p /prometheus-data
-git clone https://github.com/ansjin/promethusRun.git
+git clone https://github.com/ansjin/prometheusRun.git
 cd promethusRun
 sudo cp prometheus.yml /prometheus-data/prometheus.yml
 sudo docker run -d --net="host" --pid="host" quay.io/prometheus/node-exporter
